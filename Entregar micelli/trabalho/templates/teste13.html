@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <style>
+body {
+  background-color: #ffffcc;
+}
+
+.navbar {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-color: #e15728;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding-top: 14px;
+  padding-right: 16px;
+  padding-bottom: 14px;
+  padding-left: 16px;
+  -webkit-text-decoration-color: currentcolor;
+  text-decoration-color: currentcolor;
+  -webkit-text-decoration-line: none;
+  text-decoration-line: none;
+  -webkit-text-decoration-style: solid;
+  text-decoration-style: solid;
+}
+
+.navbar a:hover {
+  background-color: #dddddd;
+  background-image: none;
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-origin: padding-box;
+  background-size: auto auto;
+  color: #e15728;
+}
+
+.main {
+  margin-top: 70px;
+}
+
+.amarelinho:hover {
+  background-color: #ffff99;
+}
+
+input {
+  width: 30px;
+}
+
+</style> <title>pedidos</title>
+  </head>
+  <body>
+    <div class="navbar"> <a href="home">Home</a> <a href="cardapio">Cardapio</a>
+      <a href="vinho">Vinhos</a> <a href="contato">Contato</a> <a href="pedido">fazer
+        pedido</a> <a href="carrinho">ver carrinho </a></div>
+    <div class="main">
+      <div align="center">
+        <h1><span style="font-family: Goudy Old Style;"><b role="menu" style="font-family: Lucida Fax;"
+
+              class="main"><span style="font-family: Goudy Old Style;"></span>FAÇA
+              SEU PEDIDO:</b></span> </h1>
+        <h1><span style="font-family: Goudy Old Style;"> </span> </h1>
+        <h1> </h1>
+        <h1> </h1>
+        <h1> </h1>
+        <form action="/echo2" method="POST" class="center" name="pizzas" autocomplete="off">
+          <h1> </h1>
+          <table style="width: 556px;" border="1">
+            <tbody>
+              <tr>
+                <td style="height: 25px;">&nbsp;&nbsp;&nbsp; PIZZAS:</td>
+                <td style="margin-left: -222px;">30CM</td>
+                <td>&nbsp;40CM</td>
+              </tr>
+              <tr class="amarelinho">
+                <td style="margin-left: 107px; height: 24.5px; width: 414px;">&nbsp;&nbsp;
+                  CALABRESA</td>
+                <td style="width: 34.0167px;"><input name="p130" value="calabresa 30"
+
+                    min="0" max="9" autocomplete="off" type="number"> </td>
+                <td style="margin-left: 23px; width: 30.8px;"><input name="p140"
+
+                    value="calabresa 40" min="0" max="9" autocomplete="off" type="number"><br>
+                </td>
+              </tr>
+              <tr class="amarelinho">
+                <td style="height: 27.5px;">&nbsp;&nbsp;&nbsp; MUZZARELA</td>
+                <td><input name="p230" value="muzzarela 30" min="0" max="9" autocomplete="off"
+
+                    type="number"><br>
+                </td>
+                <td><input name="p240" value="muzzarela 40" min="0" max="9" autocomplete="off"
+
+                    type="number"><br>
+                </td>
+              </tr>
+              <tr class="amarelinho">
+                <td>&nbsp;&nbsp;&nbsp; FRANGO COM CATUPIRY</td>
+                <td><input name="p330" value="frango 30" min="0" max="9" autocomplete="off"
+
+                    type="number"> <br>
+                </td>
+                <td><input name="p340" value="frango 40" min="0" max="9" autocomplete="off"
+
+                    type="number"><br>
+                </td>
+              </tr>
+              <tr class="amarelinho">
+                <td>&nbsp;&nbsp;&nbsp; MARGHERITA</td>
+                <td><input name="p430" value="margherita 30" min="0" max="9" autocomplete="off"
+
+                    type="number"> </td>
+                <td><input name="p440" value="margherita 40" min="0" max="9" autocomplete="off"
+
+                    type="number"> </td>
+              </tr>
+            </tbody>
+          </table>
+          <br>
+          <input value="Fazer Pedido" type="submit"><br>
+        </form>
+        <div style="text-align: justify; margin-left: 40px;"></div>
+      </div>
+    </div>
+  </body>
+</html>
